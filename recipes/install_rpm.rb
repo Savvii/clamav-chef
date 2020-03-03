@@ -28,7 +28,7 @@ package_list = case node['platform']
                  %w(clamav clamav-update clamd)
                else
                  if node['platform_version'].to_i >= 7
-                   %w(clamav-server clamav clamav-update)
+                   %w(clamd clamav clamav-update)
                  else
                    %w(clamav clamav-db clamd)
                  end
